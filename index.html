@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kebijakan Privasi / Privacy Policy — Vault CBT Kiosk</title>
+  
+  <!-- SEO & OpenGraph Meta Tags for GitHub Pages -->
+  <meta name="description" content="Kebijakan Privasi resmi aplikasi Vault CBT Kiosk Lockdown Browser untuk Android dan Web. Mematuhi standar Google Play Console, COPPA, dan perlindungan privasi siswa.">
+  <meta name="author" content="Nurul Ilham">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Kebijakan Privasi — Vault CBT Kiosk">
+  <meta property="og:description" content="Vault CBT Kiosk berkomitmen penuh menjaga kerahasiaan data siswa dan tidak mengumpulkan informasi pribadi ke server pihak ketiga.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon SVG -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%232563eb'><path d='M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z'/></svg>" type="image/svg+xml">
+
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --primary-light: #eff6ff;
+      --success: #10b981;
+      --success-light: #f0fdf4;
+      --warning: #f59e0b;
+      --warning-light: #fffbeb;
+      --danger: #ef4444;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #0f172a;
+      --text-muted: #475569;
+      --border: #e2e8f0;
+      --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+      --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+      --radius: 12px;
+    }
+
+    [data-theme="dark"] {
+      --bg: #090d16;
+      --card-bg: #111827;
+      --text: #f1f5f9;
+      --text-muted: #94a3b8;
+      --border: #1e293b;
+      --primary-light: #1e293b;
+      --success-light: #064e3b;
+      --warning-light: #78350f;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.7;
+      color: var(--text);
+      background-color: var(--bg);
+      padding: 32px 16px;
+      transition: background-color 0.2s, color 0.2s;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      padding: 48px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+    }
+
+    /* Top Bar & Branding */
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--primary);
+    }
+
+    .brand-icon {
+      width: 36px;
+      height: 36px;
+      background: var(--primary-light);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+    }
+
+    .controls {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-toggle {
+      background: var(--primary-light);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 8px 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.875rem;
+      transition: all 0.15s;
+    }
+
+    .btn-toggle:hover {
+      background: var(--border);
+    }
+
+    .btn-toggle.active {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+    }
+
+    /* Header */
+    .header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+
+    h1 {
+      font-size: 2.25rem;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+
+    .meta {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    /* Summary Callout Banner */
+    .summary-card {
+      background: var(--success-light);
+      border: 1px solid #bbf7d0;
+      border-left: 5px solid var(--success);
+      padding: 20px 24px;
+      border-radius: 8px;
+      margin-bottom: 32px;
+    }
+
+    .summary-card h3 {
+      color: #15803d;
+      font-size: 1.1rem;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .summary-card p {
+      color: #166534;
+      font-size: 0.975rem;
+      margin: 0;
+    }
+
+    [data-theme="dark"] .summary-card {
+      border-color: #065f46;
+    }
+    [data-theme="dark"] .summary-card h3 { color: #34d399; }
+    [data-theme="dark"] .summary-card p { color: #a7f3d0; }
+
+    /* Headings & Content */
+    h2 {
+      font-size: 1.45rem;
+      font-weight: 700;
+      margin: 36px 0 16px;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    h3 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin: 20px 0 8px;
+      color: var(--text);
+    }
+
+    p {
+      color: var(--text-muted);
+      margin-bottom: 14px;
+      font-size: 1rem;
+    }
+
+    ul, ol {
+      padding-left: 24px;
+      margin-bottom: 18px;
+      color: var(--text-muted);
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    /* Tables (Data Safety Compliance Matrix) */
+    .table-container {
+      overflow-x: auto;
+      margin: 20px 0 32px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.925rem;
+    }
+
+    th {
+      background: var(--primary-light);
+      color: var(--text);
+      font-weight: 700;
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-muted);
+    }
+
+    tr:last-child td { border-bottom: none; }
+
+    .badge {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .badge-no {
+      background: #fee2e2;
+      color: #991b1b;
+    }
+
+    .badge-yes {
+      background: #dcfce7;
+      color: #166534;
+    }
+
+    [data-theme="dark"] .badge-no { background: #7f1d1d; color: #fecaca; }
+    [data-theme="dark"] .badge-yes { background: #064e3b; color: #a7f3d0; }
+
+    /* Contact Card */
+    .contact-card {
+      background: var(--primary-light);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 24px;
+      margin: 24px 0;
+    }
+
+    .contact-card a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contact-card a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+
+    /* Navigation Back to Home */
+    .back-nav {
+      margin-bottom: 20px;
+    }
+    .back-nav a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .back-nav a:hover { text-decoration: underline; }
+
+    /* Language Switch Visibility */
+    .content-lang { display: none; }
+    .content-lang.active { display: block; }
+
+    @media (max-width: 768px) {
+      body { padding: 12px; }
+      .container { padding: 24px 18px; }
+      h1 { font-size: 1.75rem; }
+      .top-bar { flex-direction: column; align-items: flex-start; }
+      .controls { width: 100%; justify-content: space-between; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Top Navigation & Controls -->
+    <div class="top-bar">
+      <div class="brand">
+        <div class="brand-icon">🛡️</div>
+        <span>Vault CBT Kiosk</span>
+      </div>
+
+      <div class="controls">
+        <!-- Language Switcher -->
+        <button type="button" class="btn-toggle active" id="btn-lang-id" onclick="setLanguage('id')">🇮🇩 Bahasa Indonesia</button>
+        <button type="button" class="btn-toggle" id="btn-lang-en" onclick="setLanguage('en')">🇬🇧 English</button>
+        <!-- Dark Mode Toggle -->
+        <button type="button" class="btn-toggle" id="theme-btn" onclick="toggleTheme()" title="Ganti Tema">🌓</button>
+      </div>
+    </div>
+
+    <!-- Main Header -->
+    <div class="header">
+      <h1 id="page-title">Kebijakan Privasi</h1>
+      <div class="meta">
+        <span>📅 <strong>Terakhir Diperbarui / Last Updated:</strong> 29 Oktober 2026</span>
+        <span>🔖 <strong>Versi Aplikasi:</strong> 1.0.0 (Build Release)</span>
+        <span>🏫 <strong>Pengembang / Developer:</strong> Nurul Ilham</span>
+      </div>
+    </div>
+
+    <!-- Quick Summary Card -->
+    <div class="summary-card">
+      <h3 id="summary-title">✅ Komitmen Privasi Siswa & Lembaga Pendidikan</h3>
+      <p id="summary-desc">
+        Aplikasi <strong>Vault CBT Kiosk</strong> dirancang dengan prinsip <em>Privacy by Design</em>. Aplikasi ini <strong>TIDAK MENGUMPULKAN, TIDAK MENYIMPAN, DAN TIDAK MEMBAGIKAN</strong> data pribadi siswa (PII), foto kamera, atau riwayat penjelajahan ke server pihak ketiga mana pun.
+      </p>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 1: BAHASA INDONESIA                                   -->
+    <!-- ============================================================ -->
+    <div id="lang-id" class="content-lang active">
+      
+      <h2>1. Pengantar & Ruang Lingkup</h2>
+      <p>
+        Kebijakan Privasi ini menjelaskan bagaimana <strong>Vault CBT Kiosk</strong> ("Aplikasi", "Kami") memperlakukan informasi pengguna saat menjalankan aplikasi pada perangkat berbasis Android maupun peramban web.
+      </p>
+      <p>
+        Aplikasi ini berfungsi sebagai peramban terkunci (<em>Lockdown Kiosk Browser</em>) yang digunakan oleh sekolah, madrasah, universitas, dan lembaga pendidikan untuk menyelenggarakan Ujian Berbasis Komputer (CBT / CAT) yang aman, adil, dan tertib.
+      </p>
+
+      <h2>2. Izin Perangkat (Android Device Permissions) & Tujuannya</h2>
+      <p>
+        Aplikasi hanya meminta izin perangkat seminimal mungkin yang mutlak diperlukan untuk memastikan integritas sesi ujian:
+      </p>
+      <ul>
+        <li>
+          <strong>Kamera (<code>android.permission.CAMERA</code>):</strong><br>
+          Hanya digunakan untuk fitur pemindai QR Code (<em>QR Code Scanner</em>) saat siswa memindai tautan atau token server ujian sekolah. Tangkapan kamera diproses secara lokal secara <em>real-time</em> di memori perangkat melalui algoritma komputer vision dan <strong>tidak pernah direkam, disimpan, atau dikirimkan ke cloud</strong>.
+        </li>
+        <li>
+          <strong>Konektivitas Internet & Jaringan (<code>INTERNET</code> & <code>ACCESS_NETWORK_STATE</code>):</strong><br>
+          Diperlukan untuk memuat konten ujian sekolah dari portal lokal (LAN) maupun portal daring (LMS / CBT Server seperti Moodle, Candy CBT, Google Forms, dll.).
+        </li>
+        <li>
+          <strong>Kunci Layar Penuh & Layar Aktif (<code>WAKE_LOCK</code>):</strong><br>
+          Mencegah layar perangkat padam atau terkunci secara otomatis selama pengerjaan soal ujian sedang berlangsung.
+        </li>
+        <li>
+          <strong>Device Administration & Kiosk Lock Task (Opsional):</strong><br>
+          Jika diizinkan oleh pengawas sekolah, aplikasi memanfaatkan API Android <em>Lock Task Mode</em> untuk mengunci tombol Navigasi, Beranda (Home), dan Aplikasi Terakhir (Recents) agar siswa tetap fokus pada lembar ujian tanpa gangguan notifikasi aplikasi lain.
+        </li>
+      </ul>
+
+      <h2>3. Matriks Deklarasi Data Safety Google Play Store</h2>
+      <p>
+        Sesuai dengan ketentuan transparansi kebijakan <em>Google Play Data Safety</em>, berikut adalah rincian pengolahan data pada aplikasi ini:
+      </p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Kategori Data</th>
+              <th>Dikumpulkan?</th>
+              <th>Dibagikan ke Pihak ke-3?</th>
+              <th>Tujuan & Pemrosesan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Informasi Pribadi (Nama, Email, No. HP)</strong></td>
+              <td><span class="badge badge-no">Tidak</span></td>
+              <td><span class="badge badge-no">Tidak</span></td>
+              <td>Tidak ada formulir akun atau registrasi pengguna pada aplikasi kami.</td>
+            </tr>
+            <tr>
+              <td><strong>Foto & Video Kamera</strong></td>
+              <td><span class="badge badge-no">Tidak</span></td>
+              <td><span class="badge badge-no">Tidak</span></td>
+              <td>Pemindaian QR code diproses sesaat (ephemeral) di RAM lokal.</td>
+            </tr>
+            <tr>
+              <td><strong>Lokasi Fisik / GPS</strong></td>
+              <td><span class="badge badge-no">Tidak</span></td>
+              <td><span class="badge badge-no">Tidak</span></td>
+              <td>Aplikasi tidak mengakses sensor GPS atau koordinat perangkat.</td>
+            </tr>
+            <tr>
+              <td><strong>File, Dokumen & Media Penyimpanan</strong></td>
+              <td><span class="badge badge-no">Tidak</span></td>
+              <td><span class="badge badge-no">Tidak</span></td>
+              <td>Aplikasi tidak mengakses galeri atau berkas internal pengguna.</td>
+            </tr>
+            <tr>
+              <td><strong>Pelacak Iklan / Advertising ID</strong></td>
+              <td><span class="badge badge-no">Tidak</span></td>
+              <td><span class="badge badge-no">Tidak</span></td>
+              <td>Aplikasi 100% bebas dari SDK iklan (tanpa AdMob, Unity, Facebook Ads).</td>
+            </tr>
+            <tr>
+              <td><strong>Preferensi Lokal (Bahasa & URL Server)</strong></td>
+              <td><span class="badge badge-yes">Ya (Lokal)</span></td>
+              <td><span class="badge badge-no">Tidak</span></td>
+              <td>Disimpan di <code>localStorage</code> perangkat pengguna saja untuk kenyamanan siswa.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>4. Kebijakan Privasi Anak (COPPA Compliance)</h2>
+      <p>
+        Karena aplikasi ini ditujukan untuk lingkungan pendidikan termasuk siswa di bawah usia 13 tahun, kami sepenuhnya mematuhi ketentuan <em>Children's Online Privacy Protection Act</em> (COPPA) dan peraturan perlindungan data pribadi siswa.
+      </p>
+      <p>
+        Aplikasi tidak meminta informasi yang dapat mengidentifikasi individu anak, tidak menyediakan fitur obrolan sosial, dan tidak melakukan profiling perilaku.
+      </p>
+
+      <h2>5. Prosedur Penghapusan Data (Data Retention & Deletion)</h2>
+      <p>
+        Karena kami tidak mengelola database terpusat yang menyimpan identitas Anda, tidak ada data di server pengembang yang perlu dihapus. 
+      </p>
+      <p>
+        Untuk menghapus seluruh pengaturan lokal (seperti URL ujian yang pernah diketikkan), pengguna cukup membuka:
+        <strong>Pengaturan Android &gt; Aplikasi &gt; Vault CBT Kiosk &gt; Penyimpanan &gt; Hapus Data (Clear Data)</strong>, atau menghapus pemasangan aplikasi (<em>Uninstall</em>).
+      </p>
+
+      <h2>6. Kontak & Narahubung Pengembang</h2>
+      <p>
+        Jika Anda adalah pihak sekolah, guru, pengawas, atau orang tua yang memiliki pertanyaan seputar privasi atau implementasi teknis Vault CBT, silakan hubungi kami:
+      </p>
+      
+      <div class="contact-card">
+        <p><strong>Pengembang / Developer:</strong> Nurul Ilham</p>
+        <p><strong>Email Resmi:</strong> <a href="mailto:nurul.iiilham@gmail.com">nurul.iiilham@gmail.com</a></p>
+        <p><strong>Telepon / WhatsApp:</strong> +62 812-1363-3608</p>
+        <p><strong>Domisili:</strong> Indonesia</p>
+      </div>
+
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 2: ENGLISH (GOOGLE PLAY PLAYBOOK AUDIT COMPLIANT)     -->
+    <!-- ============================================================ -->
+    <div id="lang-en" class="content-lang">
+      
+      <h2>1. Introduction & Overview</h2>
+      <p>
+        This Privacy Policy describes how <strong>Vault CBT Kiosk</strong> ("the Application", "We", "Us") handles information when used on Android devices and web platforms.
+      </p>
+      <p>
+        Vault CBT Kiosk is a hardened exam lockdown browser designed specifically for schools, universities, and educational test centers to conduct secure and tamper-resistant Computer-Based Testing (CBT).
+      </p>
+
+      <h2>2. Device Permissions & How They Are Used</h2>
+      <p>
+        We strictly practice data minimization. The application requests only the core permissions required for exam integrity:
+      </p>
+      <ul>
+        <li>
+          <strong>Camera (<code>android.permission.CAMERA</code>):</strong><br>
+          Used solely to scan QR codes for quick navigation to the school's examination server URL. The camera frames are processed locally in temporary device memory (RAM) and are <strong>never captured, recorded, stored, or transmitted to any remote servers</strong>.
+        </li>
+        <li>
+          <strong>Internet & Network State (<code>INTERNET</code> & <code>ACCESS_NETWORK_STATE</code>):</strong><br>
+          Required to connect your device to the institution's examination web portal (such as Moodle, Google Classroom, school LAN server, or customized CBT portals).
+        </li>
+        <li>
+          <strong>Screen Awake / Lock Prevention (<code>WAKE_LOCK</code>):</strong><br>
+          Prevents the device from sleeping or timing out while a candidate is reading and answering exam questions.
+        </li>
+        <li>
+          <strong>Lock Task Mode & Device Administration (Optional):</strong><br>
+          Enables Android's built-in Kiosk Lock Task functionality to disable the Home, Recents, and Status Bar gestures during the test, ensuring exam fairness without intruding on personal files.
+        </li>
+      </ul>
+
+      <h2>3. Google Play Data Safety Disclosure Matrix</h2>
+      <p>
+        In accordance with Google Play's Data Safety declaration requirements:
+      </p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Data Category</th>
+              <th>Collected?</th>
+              <th>Shared with 3rd Parties?</th>
+              <th>Usage & Storage Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Personal Information (Name, Email, Phone)</strong></td>
+              <td><span class="badge badge-no">No</span></td>
+              <td><span class="badge badge-no">No</span></td>
+              <td>No account registration or personal profiling takes place.</td>
+            </tr>
+            <tr>
+              <td><strong>Photos, Videos, or Audio</strong></td>
+              <td><span class="badge badge-no">No</span></td>
+              <td><span class="badge badge-no">No</span></td>
+              <td>Camera QR scan is completely real-time and ephemeral.</td>
+            </tr>
+            <tr>
+              <td><strong>Precise / Coarse Location</strong></td>
+              <td><span class="badge badge-no">No</span></td>
+              <td><span class="badge badge-no">No</span></td>
+              <td>The App does not access device GPS or location sensors.</td>
+            </tr>
+            <tr>
+              <td><strong>Device Identifiers & Ad IDs</strong></td>
+              <td><span class="badge badge-no">No</span></td>
+              <td><span class="badge badge-no">No</span></td>
+              <td>No advertising or tracking SDKs (AdMob, Firebase Analytics, etc.).</td>
+            </tr>
+            <tr>
+              <td><strong>Local Cache (Language & Exam URL)</strong></td>
+              <td><span class="badge badge-yes">Yes (Local only)</span></td>
+              <td><span class="badge badge-no">No</span></td>
+              <td>Kept purely on the device's web storage; never uploaded.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>4. Children's Privacy (COPPA Compliance)</h2>
+      <p>
+        Because this application is deployed in elementary, middle, and high schools, we are committed to complying with the <em>Children's Online Privacy Protection Act</em> (COPPA) and international student data privacy guidelines.
+      </p>
+      <p>
+        The Application does not collect personally identifiable information from children under 13, does not feature social interaction, and does not serve advertisements.
+      </p>
+
+      <h2>5. Data Retention & Deletion Rights</h2>
+      <p>
+        Because we do not operate a remote user database, we do not hold personal records on our servers.
+      </p>
+      <p>
+        Users can instantly delete all locally stored preferences (such as previous server URLs) by going to:
+        <strong>Android Settings &gt; Apps &gt; Vault CBT Kiosk &gt; Storage &gt; Clear Data</strong>, or by simply uninstalling the application.
+      </p>
+
+      <h2>6. Developer Contact Information</h2>
+      <p>
+        For inquiries or support regarding this Privacy Policy, please contact the developer:
+      </p>
+      
+      <div class="contact-card">
+        <p><strong>Developer:</strong> Nurul Ilham</p>
+        <p><strong>Official Email:</strong> <a href="mailto:nurul.iiilham@gmail.com">nurul.iiilham@gmail.com</a></p>
+        <p><strong>Phone / WhatsApp:</strong> +62 812-1363-3608</p>
+        <p><strong>Country:</strong> Indonesia</p>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>&copy; 2026 Vault CBT Kiosk. Dilindungi Undang-Undang / All Rights Reserved.</p>
+      <p style="font-size: 0.8rem; margin-top: 6px;">Hosted securely on GitHub Pages for transparency and public verification.</p>
+    </div>
+
+  </div>
+
+  <script>
+    // Language Switcher Logic
+    function setLanguage(lang) {
+      document.querySelectorAll('.content-lang').forEach(el => el.classList.remove('active'));
+      document.getElementById('btn-lang-id').classList.remove('active');
+      document.getElementById('btn-lang-en').classList.remove('active');
+
+      if (lang === 'en') {
+        document.getElementById('lang-en').classList.add('active');
+        document.getElementById('btn-lang-en').classList.add('active');
+        document.getElementById('page-title').textContent = 'Privacy Policy';
+        document.getElementById('summary-title').textContent = '✅ Commitment to Student & Institutional Privacy';
+        document.getElementById('summary-desc').innerHTML = 'The <strong>Vault CBT Kiosk</strong> application is built on <em>Privacy by Design</em> principles. It <strong>DOES NOT COLLECT, STORE, OR SHARE</strong> any student personal data (PII), camera photos, or browsing history with third-party servers.';
+        window.location.hash = 'en';
+      } else {
+        document.getElementById('lang-id').classList.add('active');
+        document.getElementById('btn-lang-id').classList.add('active');
+        document.getElementById('page-title').textContent = 'Kebijakan Privasi';
+        document.getElementById('summary-title').textContent = '✅ Komitmen Privasi Siswa & Lembaga Pendidikan';
+        document.getElementById('summary-desc').innerHTML = 'Aplikasi <strong>Vault CBT Kiosk</strong> dirancang dengan prinsip <em>Privacy by Design</em>. Aplikasi ini <strong>TIDAK MENGUMPULKAN, TIDAK MENYIMPAN, DAN TIDAK MEMBAGIKAN</strong> data pribadi siswa (PII), foto kamera, atau riwayat penjelajahan ke server pihak ketiga mana pun.';
+        window.location.hash = 'id';
+      }
+    }
+
+    // Theme Toggle Logic
+    function toggleTheme() {
+      const current = document.documentElement.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('vault_privacy_theme', next);
+    }
+
+    // Auto-detect URL hash or browser language on load
+    window.addEventListener('DOMContentLoaded', () => {
+      const savedTheme = localStorage.getItem('vault_privacy_theme') || 
+        (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', savedTheme);
+
+      if (window.location.hash === '#en') {
+        setLanguage('en');
+      } else {
+        setLanguage('id');
+      }
+    });
+  </script>
+</body>
+</html>
